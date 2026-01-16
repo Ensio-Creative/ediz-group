@@ -22,7 +22,7 @@ export default function Home() {
     <main className="overflow-x-hidden">
       {/* Hero */}
       <div className="relative bg-neutral-900 text-white">
-        <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,.55),rgba(0,0,0,.55))]" />
+        <div className="absolute inset-0 bg-[#00000099]" />
         <div
           className="h-[420px] sm:h-[680px] w-full bg-cover bg-center"
           style={{

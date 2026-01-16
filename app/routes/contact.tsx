@@ -1,5 +1,5 @@
 import type { Route } from "../+types/root";
-import React from "react";
+import React, { useState } from "react";
 
 export function meta({ }: Route.MetaArgs) {
     return [
@@ -13,11 +13,45 @@ const Section = ({ children, className = "" }: { children: React.ReactNode; clas
 );
 
 export default function Contact() {
+    const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+    const [message, setMessage] = useState<string>("");
+
+    async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+        e.preventDefault();
+        setStatus("loading");
+        setMessage("");
+
+        const form = e.currentTarget;
+        const data = new FormData(form);
+
+        // Append FormSubmit extras (optional): disable captcha, redirect behavior
+        data.append("_captcha", "false");
+
+        try {
+            const res = await fetch("https://formsubmit.co/ajax/info@edizgroup.com", {
+                method: "POST",
+                headers: { Accept: "application/json" },
+                body: data,
+            });
+            const json = await res.json();
+            if (res.ok && json.success === "true") {
+                setStatus("success");
+                setMessage("Message sent successfully.");
+                form.reset();
+            } else {
+                setStatus("error");
+                setMessage("Something went wrong. Please try again.");
+            }
+        } catch {
+            setStatus("error");
+            setMessage("Network error. Please try again.");
+        }
+    }
     return (
         <main className="overflow-x-hidden">
             {/* Hero */}
             <div className="relative text-white">
-                <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,.45),rgba(0,0,0,.35))]" />
+                <div className="absolute inset-0 bg-[#00000099]" />
                 <div
                     className="h-[360px] sm:h-[650px] w-full bg-cover bg-center"
                     style={{
@@ -42,8 +76,8 @@ export default function Contact() {
 
             {/* Office + Map */}
             <Section>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-0 rounded-md overflow-hidden shadow-sm">
-                    <div className="bg-[#F7F8FA] p-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-0 overflow-hidden">
+                    <div className="bg-[#F0F2F5] p-10">
                         <div className="space-y-6 text-[#36454F] text-sm">
                             <div>
                                 <p className="text-[15px] tracking-wider text-[#000080] font-semibold">MAIN OFFICE</p>
@@ -74,31 +108,36 @@ export default function Contact() {
             </Section>
 
             {/* Contact form */}
-            <Section className="py-16">
+            <Section className="mt-16">
                 <h3 className="text-[#36454F] text-2xl sm:text-[60px] text-center">Send a Message</h3>
                 <p className="text-center text-[#8b98a0] text-[16px] mt-2">Fields marked with an * are required</p>
-                <form className="mt-8 max-w-3xl mx-auto space-y-4">
+                <form className="mt-8 max-w-3xl mx-auto space-y-4" onSubmit={handleSubmit}>
                     <div>
                         <label className="sr-only" htmlFor="name">Name*</label>
-                        <input id="name" required className="w-full border border-[#D4D4D4] p-3 text-sm" placeholder="Name*" />
+                        <input id="name" name="name" required className="w-full border border-[#D4D4D4] p-3 text-sm" placeholder="Name*" />
                     </div>
                     <div>
                         <label className="sr-only" htmlFor="phone">Phone Number*</label>
-                        <input id="phone" required className="w-full border border-[#D4D4D4] p-3 text-sm" placeholder="Phone Number*" />
+                        <input id="phone" name="phone" required className="w-full border border-[#D4D4D4] p-3 text-sm" placeholder="Phone Number*" />
                     </div>
                     <div>
                         <label className="sr-only" htmlFor="email">Email Address*</label>
-                        <input id="email" type="email" required className="w-full border border-[#D4D4D4] p-3 text-sm" placeholder="Email Address*" />
+                        <input id="email" name="email" type="email" required className="w-full border border-[#D4D4D4] p-3 text-sm" placeholder="Email Address*" />
                     </div>
                     <div>
                         <label className="sr-only" htmlFor="subject">Subject*</label>
-                        <input id="subject" required className="w-full border border-[#D4D4D4] p-3 text-sm" placeholder="Subject*" />
+                        <input id="subject" name="subject" required className="w-full border border-[#D4D4D4] p-3 text-sm" placeholder="Subject*" />
                     </div>
                     <div>
                         <label className="sr-only" htmlFor="message">Your Message*</label>
-                        <textarea id="message" required rows={6} className="w-full border border-[#D4D4D4] p-3 text-sm" placeholder="Your Message*" />
+                        <textarea id="message" name="message" required rows={6} className="w-full border border-[#D4D4D4] p-3 text-sm" placeholder="Your Message*" />
                     </div>
-                    <button type="submit" className="w-full bg-[#000080] text-white py-3 text-sm">Send Message</button>
+                    <button type="submit" disabled={status === "loading"} className="w-full bg-[#000080] text-white py-3 text-sm disabled:opacity-60">
+                        {status === "loading" ? "Sending…" : "Send Message"}
+                    </button>
+                    {status !== "idle" && (
+                        <p className={`mt-2 text-center text-sm ${status === "success" ? "text-green-700" : status === "error" ? "text-red-700" : "text-[#8b98a0]"}`}>{message}</p>
+                    )}
                 </form>
             </Section>
         </main>
