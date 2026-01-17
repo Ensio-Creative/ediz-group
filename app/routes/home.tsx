@@ -23,13 +23,15 @@ export default function Home() {
       {/* Hero */}
       <div className="relative bg-neutral-900 text-white">
         <div className="absolute inset-0 bg-[#00000099]" />
-        <div
-          className="h-[420px] lg:h-[680px] w-full bg-cover bg-center"
-          style={{
-            backgroundImage:
-              "url(https://images.unsplash.com/photo-1536895058696-a69b1c7ba34c?q=80&w=2000&auto=format&fit=crop)",
-          }}
-        />
+        <video
+          className="h-[420px] lg:h-[680px] w-full object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source src="/images/ediz-group-video.mp4" type="video/mp4" />
+        </video>
         <div className="absolute inset-0">
           <Section className="h-full flex flex-col items-center justify-center text-center px-4">
             <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">

@@ -20,7 +20,15 @@ export default function OurBusiness() {
             {/* Hero */}
             <div className="relative text-white">
                 <div className="absolute inset-0 bg-[#00000099]" />
-                <div className="h-[380px] sm:h-[650px] w-full bg-neutral-700" />
+                <video
+                    className="h-[380px] sm:h-[650px] w-full object-cover"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                >
+                    <source src="/images/ediz-group-video.mp4" type="video/mp4" />
+                </video>
                 <div className="absolute inset-0">
                     <Section className="h-full flex items-center justify-center">
                         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight">Our Businesses</h1>
