@@ -20,7 +20,7 @@ export default function About() {
             <div className="relative text-white">
                 <div className="absolute inset-0 bg-[#00000099]" />
                 <div
-                    className="sm:h-[650px] w-full bg-cover bg-center"
+                    className="h-[420px] sm:h-[650px] w-full bg-cover bg-center"
                     style={{ backgroundImage: "url(/images/ediz-group-about-us-header.png)" }}
                 />
                 <div className="absolute inset-0 ">
@@ -32,12 +32,12 @@ export default function About() {
 
             {/* Intro */}
             <Section className="py-16">
-                <div className="grid grid-cols-3">
+                <div className="lg:grid grid-cols-3">
                     <div>
                         <p className="text-[15px] tracking-wider text-[#000080] font-medium">ABOUT EDIZ GROUP</p>
                     </div>
                     <div className="col-span-2">
-                        <h2 className="text-[60px] leading-tight text-[#36454F] max-w-3xl">
+                        <h2 className="lg:text-[60px] text-3xl leading-tight text-[#36454F] lg:max-w-3xl">
                             Building the future across multiple industries
                         </h2>
                     </div>
@@ -45,21 +45,21 @@ export default function About() {
 
             </Section>
 
-            <section className="ml-20">
+            <section className="lg:ml-20">
                 <Marquee autoFill>
-                    <img src="/images/about-slide/ediz-group-engineering-moving-1-1.png" alt="Engineering" className="w-full h-[320px] pr-4 object-cover" />
-                    <img src="/images/about-slide/ediz-group-engineering-moving-1.png" alt="Pipes" className="w-full h-[320px] pr-4 object-cover" />
-                    <img src="/images/about-slide/ediz-group-hospitality-moving-1.png" alt="Hospitality" className="w-full h-[320px] pr-4 object-cover" />
-                    <img src="/images/about-slide/ediz-group-hospitality-moving-2.png" alt="Hospitality" className="w-full h-[320px] pr-4 object-cover" />
-                    <img src="/images/about-slide/ediz-group-entertainment-moving-1.png" alt="Pipes" className="w-full h-[320px] pr-4 object-cover" />
-                    <img src="/images/about-slide/ediz-group-entertainment-moving-2.png" alt="Pipes" className="w-full h-[320px] object-cover" />
+                    <img src="/images/about-slide/ediz-group-engineering-moving-1-1.png" alt="Engineering" className="w-full lg:h-[320px] pr-4 object-cover" />
+                    <img src="/images/about-slide/ediz-group-engineering-moving-1.png" alt="Pipes" className="w-full lg:h-[320px] pr-4 object-cover" />
+                    <img src="/images/about-slide/ediz-group-hospitality-moving-1.png" alt="Hospitality" className="w-full lg:h-[320px] pr-4 object-cover" />
+                    <img src="/images/about-slide/ediz-group-hospitality-moving-2.png" alt="Hospitality" className="w-full lg:h-[320px] pr-4 object-cover" />
+                    <img src="/images/about-slide/ediz-group-entertainment-moving-1.png" alt="Pipes" className="w-full lg:h-[320px] pr-4 object-cover" />
+                    <img src="/images/about-slide/ediz-group-entertainment-moving-2.png" alt="Pipes" className="w-full lg:h-[320px] object-cover" />
                 </Marquee>
             </section>
 
             <Section className="">
-                <div className="mt-10 grid grid-cols-3 text-[#36454F]">
+                <div className="mt-10 lg:grid grid-cols-3 text-[#36454F]">
                     <div></div>
-                    <div className="space-y-6 col-span-2 leading-7 text-[16px]">
+                    <div className="space-y-6 col-span-2 leading-7 lg:text-[16px]">
                         <p>
                             Ediz Group is a premier, fully integrated conglomerate driving progress across Nigeria’s
                             most vital sectors. With a strong foundation and strategic vision, we’ve built a diverse
@@ -92,11 +92,19 @@ export default function About() {
             <div className="mt-20">
                 {/* <Section> */}
                 <div className="relative overflow-hidden rounded-none">
-                    <img src="/images/ediz-group-vision.png" alt="Vision" className="w-full h-[520px] object-cover" />
-                    <div className="absolute max-w-7xl mx-auto inset-0">
-                        <div className="absolute left-0 bottom-10 text-white text-3xl sm:text-[60px]">Our Vision</div>
-                        <div className="absolute right-0 bottom-10 bg-white backdrop-blur p-6 md:p-8 w-[320px] md:w-[540px] shadow">
-                            <p className="text-[#36454F] text-[20px] leading-6">
+                    <img
+                        src="/images/ediz-group-vision.png"
+                        alt="Vision"
+                        className="w-full h-[320px] sm:h-[420px] lg:h-[520px] object-cover"
+                    />
+                    <div className="absolute max-w-7xl mx-auto inset-0 px-4 lg:px-0">
+                        <div className="absolute lg:block hidden left-4 sm:left-6 lg:left-0 bottom-6 sm:bottom-8 lg:bottom-10 text-white text-2xl sm:text-3xl lg:text-[60px] z-20">
+                            Our Vision
+                        </div>
+                        <div className="absolute right-4 sm:right-6 lg:right-0 bottom-4 sm:bottom-8 lg:bottom-10 bg-white backdrop-blur p-4 sm:p-5 lg:p-8 w-full max-w-xs sm:max-w-sm lg:w-[540px] z-10">
+                            <p className="lg:hidden text-3xl text-[#000080]"> Our Vision</p>
+
+                            <p className="text-[#36454F] text-[14px] sm:text-[16px] lg:text-[20px] leading-relaxed">
                                 To shape Nigeria’s future as the conglomerate that bridges industrial progress with
                                 enhanced human prosperity, setting the standard for integrated excellence across every
                                 sector we serve.
@@ -111,11 +119,18 @@ export default function About() {
             <div className="">
                 {/* <Section> */}
                 <div className="relative overflow-hidden rounded-none">
-                    <img src="/images/ediz-group-mission.png" alt="Mission" className="w-full h-[520px] object-cover" />
-                    <div className="absolute max-w-7xl mx-auto inset-0">
-                        <div className="absolute left-0 bottom-10 text-white text-3xl sm:text-[60px]">Our Mission</div>
-                        <div className="absolute right-0 bottom-10 bg-white backdrop-blur p-6 md:p-8 w-[320px] md:w-[540px] shadow">
-                            <p className="text-[#36454F] text-[20px] leading-6">
+                    <img
+                        src="/images/ediz-group-mission.png"
+                        alt="Mission"
+                        className="w-full h-[320px] sm:h-[420px] lg:h-[520px] object-cover"
+                    />
+                    <div className="absolute max-w-7xl mx-auto inset-0 px-4 lg:px-0">
+                        <div className="absolute lg:block hidden left-4 sm:left-6 lg:left-0 bottom-6 sm:bottom-8 lg:bottom-10 text-white text-2xl sm:text-3xl lg:text-[60px] z-20">
+                            Our Mission
+                        </div>
+                        <div className="absolute right-4 sm:right-6 lg:right-0 bottom-4 sm:bottom-8 lg:bottom-10 bg-white backdrop-blur p-4 sm:p-5 lg:p-8 w-full max-w-xs sm:max-w-sm lg:w-[540px] z-10">
+                            <p className="lg:hidden text-3xl text-[#000080]"> Our Mission</p>
+                            <p className="text-[#36454F] text-[14px] sm:text-[16px] lg:text-[20px] leading-relaxed">
                                 To consistently deliver integrated solutions across engineering, hospitality, and
                                 entertainment — driving progress through excellence, innovation, and strategic partnerships.
                             </p>
@@ -128,7 +143,7 @@ export default function About() {
             {/* Values */}
             <div className="bg-[#000080] text-white">
                 <Section className="py-16">
-                    <div className="grid grid-cols-3">
+                    <div className="lg:grid grid-cols-3">
                         <div>
                             <p className="text-[15px] tracking-wider font-medium">OUR VALUES</p>
                         </div>

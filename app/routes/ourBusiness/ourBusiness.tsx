@@ -31,7 +31,7 @@ export default function OurBusiness() {
             {/* Intro */}
             <Section className="mt-16">
                 <p className="text-[15px] tracking-wider text-[#000080] font-semibold">OUR BUSINESSES</p>
-                <div className="mt-3 max-w-2xl text-[#36454F] text-[16px] leading-6">
+                <div className="mt-3 max-w-2xl text-[#36454F] lg:text-[16px] leading-6">
                     From pioneering engineering solutions to creating memorable hospitality experiences and
                     groundbreaking entertainment, we build businesses that shape industries and enrich lives.
                     Our diverse portfolio shares a common foundation: uncompromising quality, forward-thinking

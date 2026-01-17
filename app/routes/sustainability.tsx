@@ -36,7 +36,7 @@ export default function Sustainability() {
             {/* Intro */}
             <Section className="py-16">
                 <p className="text-[15px] tracking-wider text-[#000080] font-semibold">SUSTAINABILITY</p>
-                
+
             </Section>
 
             {/* Focus areas */}
@@ -62,10 +62,21 @@ export default function Sustainability() {
                                 "We conduct our operations with responsibility and strive to create positive outcomes for everyone we work with. The health and safety of our employees, contractors, and host communities are fundamental to our business. We're dedicated to continuously strengthening our safety performance and embedding these protections throughout our operations, ensuring we minimize workplace risks at every level.",
                         },
                     ].map((item) => (
-                        <div key={item.title} className="grid grid-cols-3 gap-6 p-6">
-                            <h3 className="text-[#36454F] text-[50px] font-medium">{item.title}</h3>
-                            <p className="mt-3 text-[#59666F] text-[16px] text-[#36454F] leading-6">{item.desc}</p>
-                            <img className="w-full" src={item.image} alt="" />
+                        <div
+                            key={item.title}
+                            className="grid gap-6 py-6 md:grid-cols-3 md:items-start"
+                        >
+                            <h3 className="text-[#36454F] text-[28px] sm:text-[34px] md:text-[42px] lg:text-[50px] font-medium leading-tight">
+                                {item.title}
+                            </h3>
+                            <p className="mt-1 md:mt-3 text-[#36454F] text-[14px] sm:text-[15px] md:text-[16px] leading-relaxed">
+                                {item.desc}
+                            </p>
+                            <img
+                                className="w-full max-w-[360px] md:max-w-none md:w-full justify-self-start md:justify-self-auto"
+                                src={item.image}
+                                alt={item.title}
+                            />
                         </div>
                     ))}
                 </div>

@@ -46,7 +46,7 @@ export default function Entertainment() {
             {/* Content */}
             <Section className="py-16 lg:flex justify-between lg:gap-16">
                 {/* Left column: copy */}
-                <div className="lg:w-1/2 text-[16px] leading-[1.6] tracking-[0.04em] text-[#36454F]">
+                <div className="lg:w-1/2 lg:text-[16px] leading-[1.6] tracking-[0.04em] text-[#36454F]">
                     <p className="uppercase text-[15px] font-semibold tracking-[0.2em] text-[#000080] mb-4">
                         ENTERTAINMENT
                     </p>
@@ -60,8 +60,8 @@ export default function Entertainment() {
 
                 {/* Right column: portfolio list */}
                 <aside className="mt-12 lg:mt-0 lg:w-1/2 lg:pl-4">
-                    <h2 className="text-[50px] tracking-wide text-[#000080] mb-6">Our Portfolio</h2>
-                    <div className="space-y-4 text-[21px] tracking-[0.12em] uppercase text-[#36454F]">
+                    <h2 className="lg:text-[50px] text-3xl tracking-wide text-[#000080] mb-6">Our Portfolio</h2>
+                    <div className="space-y-4 lg:text-[21px] text-xl tracking-[0.12em] uppercase text-[#36454F]">
                         <div className="border-y border-[#D4D4D4] py-6">
                             <p>BIG EDIZ ENTERTAINMENT NIGERIA LIMITED</p>
                         </div>

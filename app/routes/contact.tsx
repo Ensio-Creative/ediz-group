@@ -69,7 +69,7 @@ export default function Contact() {
             {/* Intro */}
             <Section className="py-16">
                 <p className="text-[15px] tracking-wider text-[#000080] text-center font-semibold">CONTACT US</p>
-                <h2 className="mt-4 text-[#36454F] text-2xl sm:text-[60px] leading-tight max-w-4xl text-center mx-auto">
+                <h2 className="mt-4 text-[#36454F] text-xl sm:text-[60px] leading-tight max-w-4xl text-center mx-auto">
                     Get in touch with us for any enquiries or questions because we can’t wait to hear from you.
                 </h2>
             </Section>
@@ -81,17 +81,17 @@ export default function Contact() {
                         <div className="space-y-6 text-[#36454F] text-sm">
                             <div>
                                 <p className="text-[15px] tracking-wider text-[#000080] font-semibold">MAIN OFFICE</p>
-                                <p className="mt-2 text-[26px]">
+                                <p className="mt-2 lg:text-[26px]">
                                     11 Emeyal Street, G.R.A. Phase 3,<br /> Port Harcourt, Rivers State – Nigeria.
                                 </p>
                             </div>
                             <div>
                                 <p className="text-[15px] tracking-wider text-[#000080] font-semibold">CALL US</p>
-                                <p className="mt-2 text-[26px]">+234 806 730 0000<br />+234 703 157 8053</p>
+                                <p className="mt-2 lg:text-[26px]">+234 806 730 0000<br />+234 703 157 8053</p>
                             </div>
                             <div>
                                 <p className="text-[15px] tracking-wider text-[#000080] font-semibold">EMAIL US</p>
-                                <p className="mt-2 text-[26px]">info@edizgroup.com</p>
+                                <p className="mt-2 lg:text-[26px]">info@edizgroup.com</p>
                             </div>
                         </div>
                     </div>
@@ -110,7 +110,7 @@ export default function Contact() {
             {/* Contact form */}
             <Section className="mt-16">
                 <h3 className="text-[#36454F] text-2xl sm:text-[60px] text-center">Send a Message</h3>
-                <p className="text-center text-[#8b98a0] text-[16px] mt-2">Fields marked with an * are required</p>
+                <p className="text-center text-[#8b98a0] lg:text-[16px] mt-2">Fields marked with an * are required</p>
                 <form className="mt-8 max-w-3xl mx-auto space-y-4" onSubmit={handleSubmit}>
                     <div>
                         <label className="sr-only" htmlFor="name">Name*</label>

@@ -34,14 +34,14 @@ const workWithUs = () => {
             </div>
 
             {/* Intro */}
-            <Section className="py-16 mb-20">
-                <p className="text-[15px] tracking-wider text-[#000080] font-semibold">CAREERS</p>
-                <div className='grid grid-cols-2 mt-4'>
+            <Section className="py-10 sm:py-12 lg:py-16 mb-16 lg:mb-20">
+                <p className="text-[13px] sm:text-[14px] md:text-[15px] tracking-wider text-[#000080] font-semibold">CAREERS</p>
+                <div className='mt-6 grid gap-6 md:gap-8 md:grid-cols-2 items-start'>
                     <div>
-                        <h2 className='text-[#36454F] text-[60px]'>Open Roles</h2>
+                        <h2 className='text-[#36454F] text-[32px] sm:text-[40px] md:text-[52px] lg:text-[60px] leading-tight'>Open Roles</h2>
                     </div>
                     <div>
-                        <p className='text-[#36454F] text-[25px]'>Unfortunately, there are no openings at the moment. Check back soon for opportunities to join us and make a difference.</p>
+                        <p className='text-[#36454F] text-[15px] sm:text-[17px] md:text-[20px] lg:text-[25px] leading-relaxed'>Unfortunately, there are no openings at the moment. Check back soon for opportunities to join us and make a difference.</p>
                     </div>
                 </div>
             </Section>
