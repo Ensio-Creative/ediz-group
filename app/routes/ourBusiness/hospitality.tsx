@@ -64,10 +64,10 @@ export default function Hospitality() {
                 <aside className="mt-12 lg:mt-0 lg:w-1/2 lg:pl-4">
                     <h2 className="text-[50px] tracking-wide text-[#000080] mb-6">Our Portfolio</h2>
                     <div className="space-y-4 text-[21px] tracking-[0.12em] uppercase text-[#36454F]">
-                        <div className="border-t border-[#D4D4D4] pt-4">
+                        <div className="border-t border-[#D4D4D4] py-6">
                             <p>EDIZ WINEBAR</p>
                         </div>
-                        <div className="border-t border-[#D4D4D4] pt-4">
+                        <div className="border-y border-[#D4D4D4] py-6">
                             <p>11:59 NIGHT LIFE</p>
                         </div>
                     </div>
