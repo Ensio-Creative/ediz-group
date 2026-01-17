@@ -24,18 +24,18 @@ export default function Home() {
       <div className="relative bg-neutral-900 text-white">
         <div className="absolute inset-0 bg-[#00000099]" />
         <div
-          className="h-[420px] sm:h-[680px] w-full bg-cover bg-center"
+          className="h-[420px] lg:h-[680px] w-full bg-cover bg-center"
           style={{
             backgroundImage:
               "url(https://images.unsplash.com/photo-1536895058696-a69b1c7ba34c?q=80&w=2000&auto=format&fit=crop)",
           }}
         />
         <div className="absolute inset-0">
-          <Section className="h-full flex flex-col items-center justify-center text-center">
-            <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight">
+          <Section className="h-full flex flex-col items-center justify-center text-center px-4">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
               Building sustainable
               <br className="hidden sm:block" />
-              value across diverse
+              {" "} value across diverse
               <br className="hidden sm:block" />
               industries
             </h1>
@@ -47,9 +47,9 @@ export default function Home() {
       </div>
 
       {/* Intro */}
-      <Section className="py-14">
+      <Section className="py-10 sm:py-12 lg:py-14">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="text-[31px] text-[#36454F] leading-7">
+          <p className="text-[18px] sm:text-[22px] md:text-[26px] lg:text-[31px] text-[#36454F] leading-relaxed sm:leading-8">
             Ediz Group is a diversified conglomerate with businesses across
             engineering, hospitality, and entertainment. Through precision
             infrastructure, exceptional experiences, and community-first values,
@@ -66,30 +66,36 @@ export default function Home() {
       </Section>
 
       {/* Numbers */}
-      <Section className="py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="bg-[#F0F2F5] flex items-center justify-center p-4 ">
-            <div className="text-[#36454F] flex text-[60px] gap-3">
+      <Section className="py-12 sm:py-14 lg:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+          <div className="bg-[#F0F2F5] flex items-center justify-center p-4">
+            <div className="text-[#36454F] flex text-[28px] sm:text-[40px] md:text-[50px] lg:text-[60px] gap-3 text-center md:text-left">
               Our Numbers
-              <ArrowRight size={50} width={50} className="text-blue-900 my-auto" />
+              <ArrowRight size={32} className="text-blue-900 my-auto hidden sm:inline-block md:h-12 md:w-12" />
             </div>
           </div>
-          <div className="bg-[#000080] text-white px-6 py-12 grid grid-cols-2 gap-6">
+          <div className="bg-[#000080] text-white px-6 py-10 sm:py-12 grid grid-cols-2 gap-6">
             <div>
-              <div className="text-[90px] text-center font-bold leading-none">03</div>
-              <div className="mt-2 text-[10px] uppercase tracking-widest text-center">
+              <div className="text-[42px] sm:text-[64px] md:text-[80px] lg:text-[90px] text-center font-bold leading-none">
+                03
+              </div>
+              <div className="mt-2 text-[9px] sm:text-[10px] uppercase tracking-widest text-center">
                 Industries
               </div>
             </div>
             <div>
-              <div className="text-[90px] text-center font-bold leading-none">500+</div>
-              <div className="mt-2 text-[10px] uppercase tracking-widest text-center">
+              <div className="text-[42px] sm:text-[64px] md:text-[80px] lg:text-[90px] text-center font-bold leading-none">
+                500+
+              </div>
+              <div className="mt-2 text-[9px] sm:text-[10px] uppercase tracking-widest text-center">
                 Employees
               </div>
             </div>
             <div className="">
-              <div className="text-[90px] text-center font-bold leading-none">06</div>
-              <div className="mt-2 text-[10px] uppercase tracking-widest text-center">
+              <div className="text-[42px] sm:text-[64px] md:text-[80px] lg:text-[90px] text-center font-bold leading-none">
+                06
+              </div>
+              <div className="mt-2 text-[9px] sm:text-[10px] uppercase tracking-widest text-center">
                 Regions Served
               </div>
             </div>
@@ -98,7 +104,7 @@ export default function Home() {
       </Section>
 
       {/* Businesses */}
-      <Section>
+      <Section className="pt-10 sm:pt-12 lg:pt-16">
         <p className="text-[15px] tracking-wider text-[#000080] font-medium">OUR BUSINESSES</p>
         <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
@@ -127,10 +133,12 @@ export default function Home() {
               className="group overflow-hidden block relative"
             >
               <div
-                className="h-[450px] bg-cover bg-center group-hover:scale-[1.02] transition-transform"
+                className="h-[260px] sm:h-[340px] md:h-[400px] lg:h-[450px] bg-cover bg-center group-hover:scale-[1.02] transition-transform"
                 style={{ backgroundImage: `url(${card.img})` }}
               />
-              <div className="p-4 absolute bottom-2 text-white text-[35px] font-medium">{card.title}</div>
+              <div className="p-3 sm:p-4 absolute bottom-2 text-white text-[22px] sm:text-[28px] md:text-[32px] lg:text-[35px] font-medium">
+                {card.title}
+              </div>
             </Link>
           ))}
         </div>
@@ -139,10 +147,10 @@ export default function Home() {
       {/* Impact banner */}
       <div className="mt-16 bg-neutral-100 relative">
         <img src="/images/ediz-group-our-impact.png" className="w-full" alt="" />
-        <div className="absolute -bottom-30 right-20 flex items-end">
-          <div className="w-[600px] bg-white p-20">
+        <div className="static md:absolute md:-bottom-30 md:right-20 flex justify-center md:justify-end items-end px-4 md:px-0 mt-6 md:mt-0">
+          <div className="w-full md:w-[600px] bg-white p-6 sm:p-10 md:p-16 lg:p-20">
             <p className="text-[15px] tracking-wider text-[#000080] font-medium">OUR IMPACT</p>
-            <p className="mt-3 text-[#36454F] text-[23px] leading-6">
+            <p className="mt-3 text-[#36454F] text-[16px] sm:text-[18px] md:text-[20px] lg:text-[23px] leading-relaxed">
               Education opens doors. Through strategic partnerships with
               schools, scholarship programs, and infrastructure development,
               we’re ensuring students have the resources, environment, and
@@ -153,13 +161,13 @@ export default function Home() {
       </div>
 
       {/* Sustainability */}
-      <Section className="mt-32 bg-[#F0F2F5]">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center p-12">
+      <Section className="mt-24 sm:mt-28 lg:mt-32 bg-[#F0F2F5]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-4 py-10 sm:px-8 sm:py-12 lg:p-12">
           <div className="order-2 md:order-1">
             <p className="text-[15px] tracking-wider text-[#000080] font-medium">
               SUSTAINABILITY
             </p>
-            <p className="my-3 lg:mr-10 text-[#36454F] text-[21px] leading-6">
+            <p className="my-3 lg:mr-10 text-[#36454F] text-[16px] sm:text-[18px] md:text-[20px] lg:text-[21px] leading-relaxed">
               At Ediz Group, we build with future generations in mind. Our
               sustainability approach places environmental stewardship,
               community empowerment, and health & safety at the core of every
