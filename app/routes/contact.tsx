@@ -53,7 +53,7 @@ export default function Contact() {
             <div className="relative text-white">
                 <div className="absolute inset-0 bg-[#00000099]" />
                 <div
-                    className="h-[360px] sm:h-[650px] w-full bg-cover bg-center"
+                    className="h-[420px] sm:h-[650px] w-full bg-cover bg-center"
                     style={{
                         backgroundImage:
                             "url(/images/ediz-group-contact-header.png)",

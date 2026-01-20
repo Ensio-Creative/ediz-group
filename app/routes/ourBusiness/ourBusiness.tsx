@@ -21,7 +21,7 @@ export default function OurBusiness() {
             <div className="relative text-white">
                 <div className="absolute inset-0 bg-[#00000099]" />
                 <video
-                    className="h-[380px] sm:h-[650px] w-full object-cover"
+                    className="h-[420px] sm:h-[650px] w-full object-cover"
                     autoPlay
                     muted
                     loop

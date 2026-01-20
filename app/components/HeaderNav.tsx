@@ -74,13 +74,13 @@ const HeaderNav = () => {
                                 </button>
                                 {desktopBusinessesOpen && (
                                     <div className="absolute top-full left-0 mt-2 bg-white divide-y divide-[#D4D4D4] p-2 min-w-[250px] z-50">
-                                        <NavLink to="/our-business/engineering" onClick={() => setDesktopBusinessesOpen(false)} className="block px-4 py-2 text-sm text-[#000080] hover:bg-gray-100">
+                                        <NavLink to="/our-business/engineering" onClick={() => setDesktopBusinessesOpen(false)} className="block px-4 py-2 text-[16px] text-[#000080] hover:bg-gray-100">
                                             Engineering
                                         </NavLink>
-                                        <NavLink to="/our-business/hospitality" onClick={() => setDesktopBusinessesOpen(false)} className="block px-4 py-2 text-sm text-[#000080] hover:bg-gray-100">
+                                        <NavLink to="/our-business/hospitality" onClick={() => setDesktopBusinessesOpen(false)} className="block px-4 py-2 text-[16px] text-[#000080] hover:bg-gray-100">
                                             Hospitality
                                         </NavLink>
-                                        <NavLink to="/our-business/entertainment" onClick={() => setDesktopBusinessesOpen(false)} className="block px-4 py-2 text-sm text-[#000080] hover:bg-gray-100">
+                                        <NavLink to="/our-business/entertainment" onClick={() => setDesktopBusinessesOpen(false)} className="block px-4 py-2 text-[16px] text-[#000080] hover:bg-gray-100">
                                             Entertainment
                                         </NavLink>
                                     </div>
