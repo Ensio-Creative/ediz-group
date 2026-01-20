@@ -34,10 +34,10 @@ export default function Home() {
         </video>
         <div className="absolute inset-0">
           <Section className="h-full flex flex-col items-center justify-center text-center px-4">
-            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
+            <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
               Building sustainable
               <br className="hidden sm:block" />
-              {" "} value across diverse
+              {" "} value across diverse {" "}
               <br className="hidden sm:block" />
               industries
             </h1>
