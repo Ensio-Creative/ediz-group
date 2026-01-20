@@ -67,8 +67,8 @@ export default function Contact() {
             </div>
 
             {/* Intro */}
-            <Section className="py-16">
-                <p className="text-[15px] tracking-wider text-[#000080] text-center font-semibold">CONTACT US</p>
+            <Section className="py-32">
+                {/* <p className="text-[15px] tracking-wider text-[#000080] text-center font-semibold">CONTACT US</p> */}
                 <h2 className="mt-4 text-[#36454F] text-xl sm:text-[60px] leading-tight max-w-4xl text-center mx-auto">
                     Get in touch with us for any enquiries or questions because we can’t wait to hear from you.
                 </h2>
@@ -98,7 +98,7 @@ export default function Contact() {
                     <div className="bg-white">
                         <iframe
                             title="Map to Ediz Group"
-                            className="w-full h-[360px] md:h-[380px]"
+                            className="w-full h-[360px] md:h-[402px]"
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.399782949126!2d6.998!3d4.842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sGRA%20Phase%203%20Port%20Harcourt!5e0!3m2!1sen!2sNG!4v1700000000000"

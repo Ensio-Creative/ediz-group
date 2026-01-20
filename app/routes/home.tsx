@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <main className="overflow-x-hidden">
       {/* Hero */}
-      <div className="relative bg-neutral-900 text-white">
+      <div className="relative bg-[#00000099] text-white">
         <div className="absolute inset-0 bg-[#00000099]" />
         <video
           className="h-[420px] lg:h-[680px] w-full object-cover"
@@ -49,7 +49,7 @@ export default function Home() {
       </div>
 
       {/* Intro */}
-      <Section className="py-10 sm:py-12 lg:py-14">
+      <Section className=" lg:pt-[100px] lg:pb-14 sm:py-24">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-[18px] sm:text-[22px] md:text-[26px] lg:text-[31px] text-[#36454F] leading-relaxed sm:leading-8">
             Ediz Group is a diversified conglomerate with businesses across
@@ -138,6 +138,7 @@ export default function Home() {
                 className="h-[260px] sm:h-[340px] md:h-[400px] lg:h-[450px] bg-cover bg-center group-hover:scale-[1.02] transition-transform"
                 style={{ backgroundImage: `url(${card.img})` }}
               />
+              <div className="absolute inset-0 bg-[#00000099] group-hover:bg-black/40 transition-colors" />
               <div className="p-3 sm:p-4 absolute bottom-2 text-white text-[22px] sm:text-[28px] md:text-[32px] lg:text-[35px] font-medium">
                 {card.title}
               </div>
@@ -147,12 +148,15 @@ export default function Home() {
       </Section>
 
       {/* Impact banner */}
-      <div className="mt-16 bg-neutral-100 relative">
-        <img src="/images/ediz-group-our-impact.png" className="w-full" alt="" />
+      <div className="mt-32 bg-[#00000099] relative">
+        <div className="relative">
+          <img src="/images/ediz-group-our-impact.png" className="w-full" alt="" />
+          <div className="absolute inset-0 bg-[#00000099]" />
+        </div>
         <div className="static md:absolute md:-bottom-30 md:right-20 flex justify-center md:justify-end items-end px-4 md:px-0 mt-6 md:mt-0">
           <div className="w-full md:w-[600px] bg-white p-6 sm:p-10 md:p-16 lg:p-20">
             <p className="text-[15px] tracking-wider text-[#000080] font-medium">OUR IMPACT</p>
-            <p className="mt-3 text-[#36454F] text-[16px] sm:text-[18px] md:text-[20px] lg:text-[23px] leading-relaxed">
+            <p className="mt-6 text-[#36454F] text-[16px] sm:text-[18px] md:text-[20px] lg:text-[23px] leading-relaxed">
               Education opens doors. Through strategic partnerships with
               schools, scholarship programs, and infrastructure development,
               we’re ensuring students have the resources, environment, and
@@ -169,7 +173,7 @@ export default function Home() {
             <p className="text-[15px] tracking-wider text-[#000080] font-medium">
               SUSTAINABILITY
             </p>
-            <p className="my-3 lg:mr-10 text-[#36454F] text-[16px] sm:text-[18px] md:text-[20px] lg:text-[21px] leading-relaxed">
+            <p className="my-6 lg:mr-10 text-[#36454F] text-[16px] sm:text-[18px] md:text-[20px] lg:text-[21px] leading-relaxed">
               At Ediz Group, we build with future generations in mind. Our
               sustainability approach places environmental stewardship,
               community empowerment, and health & safety at the core of every

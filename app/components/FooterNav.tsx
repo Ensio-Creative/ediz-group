@@ -14,26 +14,26 @@ const FooterNav = () => {
                         />
                     </div>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-10 text-[13px] text-neutral-700">
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-10 text-[15px] text-neutral-700">
                         <div>
-                            <h4 className="font-medium text-[#000080] mb-3">Explore</h4>
+                            <h4 className="font-medium uppercase text-[15px] text-[#000080] mb-3">Explore</h4>
                             <ul className="space-y-2">
-                                <li><Link to="/" className="hover:underline">Home</Link></li>
-                                <li><Link to="/about" className="hover:underline">About us</Link></li>
-                                <li><Link to="/sustainability" className="hover:underline">Sustainability</Link></li>
-                                <li><Link to="/work-with-us" className="hover:underline">Careers</Link></li>
+                                <li><Link to="/" className="">Home</Link></li>
+                                <li><Link to="/about" className="">About us</Link></li>
+                                <li><Link to="/sustainability" className="">Sustainability</Link></li>
+                                <li><Link to="/work-with-us" className="">Careers</Link></li>
                             </ul>
                         </div>
                         <div>
-                            <h4 className="font-medium text-[#000080] mb-3">Our Businesses</h4>
+                            <h4 className="font-medium uppercase text-[15px] text-[#000080] mb-3">Our Businesses</h4>
                             <ul className="space-y-2">
-                                <li><Link to="/our-business/engineering" className="hover:underline">Engineering</Link></li>
-                                <li><Link to="/our-business/hospitality" className="hover:underline">Hospitality</Link></li>
-                                <li><Link to="/our-business/entertainment" className="hover:underline">Entertainment</Link></li>
+                                <li><Link to="/our-business/engineering" className="">Engineering</Link></li>
+                                <li><Link to="/our-business/hospitality" className="">Hospitality</Link></li>
+                                <li><Link to="/our-business/entertainment" className="">Entertainment</Link></li>
                             </ul>
                         </div>
                         <div>
-                            <h4 className="font-medium text-[#000080] mb-3">Contact</h4>
+                            <h4 className="font-medium uppercase text-[15px] text-[#000080] mb-3">Contact</h4>
                             <ul className="space-y-1">
                                 <li>info@edizgroup.com</li>
                             </ul>

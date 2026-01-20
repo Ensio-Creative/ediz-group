@@ -41,7 +41,7 @@ export default function Sustainability() {
 
             {/* Focus areas */}
             <Section>
-                <div className="divide-y-1 divide-[#D4D4D4]">
+                <div className="divide-y-1 divide-[#D4D4D4] border-t border-[#D4D4D4]">
                     {[
                         {
                             title: "Environment",

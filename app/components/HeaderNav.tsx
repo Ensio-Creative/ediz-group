@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router";
 import { Menu, X, ChevronUp, ChevronDown } from "lucide-react";
 
 const linkBase =
-    "text-sm md:text-[13px] transition-colors px-3 py-2";
+    "text-sm md:text-[16px] transition-colors px-3 py-2";
 
 const mobileLinkBase =
     "block w-full text-left text-xl text-[#000080] py-6";
@@ -37,7 +37,7 @@ const HeaderNav = () => {
     }, [mobileOpen]);
 
     const headerBg = scrolled || mobileOpen ? "bg-white backdrop-blur" : "bg-transparent";
-    const desktopLinkColor = scrolled || mobileOpen ? "text-[#000080] hover:text-black" : "text-white hover:text-white";
+    const desktopLinkColor = scrolled || mobileOpen ? "text-[#000080]" : "text-white";
 
     const closeMobile = () => setMobileOpen(false);
 

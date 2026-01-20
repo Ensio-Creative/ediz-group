@@ -31,7 +31,7 @@ export default function About() {
             </div>
 
             {/* Intro */}
-            <Section className="py-16">
+            <Section className="pt-[100px] pb-16">
                 <div className="lg:grid grid-cols-3">
                     <div>
                         <p className="text-[15px] tracking-wider text-[#000080] font-medium">ABOUT EDIZ GROUP</p>
@@ -47,17 +47,17 @@ export default function About() {
 
             <section className="lg:ml-20">
                 <Marquee autoFill>
-                    <img src="/images/about-slide/ediz-group-engineering-moving-1-1.png" alt="Engineering" className="w-full lg:h-[320px] pr-4 object-cover" />
                     <img src="/images/about-slide/ediz-group-engineering-moving-1.png" alt="Pipes" className="w-full lg:h-[320px] pr-4 object-cover" />
+                    <img src="/images/about-slide/ediz-group-engineering-moving-1-1.png" alt="Engineering" className="w-full lg:h-[320px] pr-4 object-cover" />
                     <img src="/images/about-slide/ediz-group-hospitality-moving-1.png" alt="Hospitality" className="w-full lg:h-[320px] pr-4 object-cover" />
                     <img src="/images/about-slide/ediz-group-hospitality-moving-2.png" alt="Hospitality" className="w-full lg:h-[320px] pr-4 object-cover" />
                     <img src="/images/about-slide/ediz-group-entertainment-moving-1.png" alt="Pipes" className="w-full lg:h-[320px] pr-4 object-cover" />
-                    <img src="/images/about-slide/ediz-group-entertainment-moving-2.png" alt="Pipes" className="w-full lg:h-[320px] object-cover" />
+                    <img src="/images/about-slide/ediz-group-entertainment-moving-2.png" alt="Pipes" className="w-full lg:h-[320px] pr-4 object-cover" />
                 </Marquee>
             </section>
 
             <Section className="">
-                <div className="mt-10 lg:grid grid-cols-3 text-[#36454F]">
+                <div className="mt-20 lg:grid grid-cols-3 text-[#36454F]">
                     <div></div>
                     <div className="space-y-6 col-span-2 leading-7 lg:text-[16px]">
                         <p>
@@ -97,6 +97,7 @@ export default function About() {
                         alt="Vision"
                         className="w-full h-[320px] sm:h-[420px] lg:h-[520px] object-cover"
                     />
+                    <div className="absolute inset-0 bg-[#00000099]" />
                     <div className="absolute max-w-7xl mx-auto inset-0 px-4 lg:px-0">
                         <div className="absolute lg:block hidden left-4 sm:left-6 lg:left-0 bottom-6 sm:bottom-8 lg:bottom-10 text-white text-2xl sm:text-3xl lg:text-[60px] z-20">
                             Our Vision
@@ -124,6 +125,7 @@ export default function About() {
                         alt="Mission"
                         className="w-full h-[320px] sm:h-[420px] lg:h-[520px] object-cover"
                     />
+                    <div className="absolute inset-0 bg-[#00000099]" />
                     <div className="absolute max-w-7xl mx-auto inset-0 px-4 lg:px-0">
                         <div className="absolute lg:block hidden left-4 sm:left-6 lg:left-0 bottom-6 sm:bottom-8 lg:bottom-10 text-white text-2xl sm:text-3xl lg:text-[60px] z-20">
                             Our Mission
@@ -142,7 +144,7 @@ export default function About() {
 
             {/* Values */}
             <div className="bg-[#000080] text-white">
-                <Section className="py-16">
+                <Section className="py-32">
                     <div className="lg:grid grid-cols-3">
                         <div>
                             <p className="text-[15px] tracking-wider font-medium">OUR VALUES</p>
@@ -188,8 +190,8 @@ export default function About() {
                                 <img src={m.img} alt={m.name} className="w-full h-[331px] object-cover" />
                             </div>
                             <div className="mt-3">
-                                <p className="text-[#36454F] text-sm">{m.name}</p>
-                                <p className="text-[#8b98a0] text-xs">{m.title}</p>
+                                <p className="text-[#36454F] text-[20px]">{m.name}</p>
+                                <p className="text-[#8b98a0] text-[16px]">{m.title}</p>
                             </div>
                         </div>
                     ))}
