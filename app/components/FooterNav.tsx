@@ -7,11 +7,13 @@ const FooterNav = () => {
             <div className="mx-auto max-w-7xl  px-4 py-10">
                 <div className="flex justify-between">
                     <div className="mt-10">
-                        <img
-                            src="/images/ediz-group-footer-logo.svg"
-                            alt="Ediz Group"
-                            className="h-6 w-auto "
-                        />
+                        <Link to="/">
+                            <img
+                                src="/images/ediz-group-footer-logo.svg"
+                                alt="Ediz Group"
+                                className="h-6 w-auto "
+                            />
+                        </Link>
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-10 text-[15px] text-neutral-700">
@@ -43,7 +45,7 @@ const FooterNav = () => {
 
                 <div className="mt-12 flex border-t pt-12 border-[#D4D4D4] justify-between text-[12px] text-neutral-500">
                     <p>© {new Date().getFullYear()} Ediz Group. All Rights Reserved</p>
-                    <p className="">Site by Ensio Creative</p>
+                    <p className="">Site by <a href="https://www.ensiocreative.co/" target="_blank" rel="noopener noreferrer" className="cursor-pointer">Ensio Creative</a></p>
                 </div>
             </div>
         </footer>

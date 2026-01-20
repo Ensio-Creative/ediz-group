@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ArrowDown } from "lucide-react";
 import type { Route } from "./+types/home";
 import { Link } from "react-router";
 
@@ -24,7 +24,7 @@ export default function Home() {
       <div className="relative bg-[#00000099] text-white">
         <div className="absolute inset-0 bg-[#00000099]" />
         <video
-          className="h-[420px] lg:h-[680px] w-full object-cover"
+          className="h-[620px] lg:h-[680px] w-full object-cover"
           autoPlay
           muted
           loop
@@ -49,7 +49,7 @@ export default function Home() {
       </div>
 
       {/* Intro */}
-      <Section className=" lg:pt-[100px] lg:pb-14 sm:py-24">
+      <Section className=" lg:pt-[100px] lg:pb-14 pt-24 pb-14">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-[18px] sm:text-[22px] md:text-[26px] lg:text-[31px] text-[#36454F] leading-relaxed sm:leading-8">
             Ediz Group is a diversified conglomerate with businesses across
@@ -71,9 +71,10 @@ export default function Home() {
       <Section className="py-12 sm:py-14 lg:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
           <div className="bg-[#F0F2F5] flex items-center justify-center p-4">
-            <div className="text-[#36454F] flex text-[28px] sm:text-[40px] md:text-[50px] lg:text-[60px] gap-3 text-center md:text-left">
+            <div className="text-[#36454F] flex flex-col sm:flex-row text-[28px] sm:text-[40px] md:text-[50px] lg:text-[60px] gap-3 text-center md:text-left items-center">
               Our Numbers
               <ArrowRight size={32} className="text-blue-900 my-auto hidden sm:inline-block md:h-12 md:w-12" />
+              <ArrowDown size={32} className="text-blue-900 sm:hidden md:h-12 md:w-12" />
             </div>
           </div>
           <div className="bg-[#000080] text-white px-6 py-10 sm:py-12 grid grid-cols-2 gap-6">
@@ -135,7 +136,7 @@ export default function Home() {
               className="group overflow-hidden block relative"
             >
               <div
-                className="h-[260px] sm:h-[340px] md:h-[400px] lg:h-[450px] bg-cover bg-center group-hover:scale-[1.02] transition-transform"
+                className="h-[460px] sm:h-[340px] md:h-[400px] lg:h-[450px] bg-cover bg-center group-hover:scale-[1.02] transition-transform"
                 style={{ backgroundImage: `url(${card.img})` }}
               />
               <div className="absolute inset-0 bg-[#00000099] group-hover:bg-black/40 transition-colors" />
@@ -148,9 +149,9 @@ export default function Home() {
       </Section>
 
       {/* Impact banner */}
-      <div className="mt-32 bg-[#00000099] relative">
+      <div className="mt-32 relative">
         <div className="relative">
-          <img src="/images/ediz-group-our-impact.png" className="w-full" alt="" />
+          <img src="/images/ediz-group-our-impact.png" className="w-full lg:h-auto h-[260px] object-cover" alt="" />
           <div className="absolute inset-0 bg-[#00000099]" />
         </div>
         <div className="static md:absolute md:-bottom-30 md:right-20 flex justify-center md:justify-end items-end px-4 md:px-0 mt-6 md:mt-0">

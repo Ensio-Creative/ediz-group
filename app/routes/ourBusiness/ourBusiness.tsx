@@ -60,7 +60,7 @@ export default function OurBusiness() {
                             className="group flex items-center justify-between py-8"
                         >
                             <span className="text-3xl sm:text-[60px] text-[#36454F]">{item.label}</span>
-                            <ArrowDownRight size={50} className="text-[#000080] group-hover:translate-x-1 transition-transform" />
+                            <ArrowDownRight size={30} className="sm:w-[50px] sm:h-[50px] text-[#000080] group-hover:translate-x-1 transition-transform" />
                         </Link>
                     ))}
                 </div>

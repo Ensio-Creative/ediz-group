@@ -44,7 +44,7 @@ export default function Entertainment() {
             </div>
 
             {/* Content */}
-            <Section className="py-32 lg:flex justify-between lg:gap-16">
+            <Section className="lg:py-32 py-20 lg:flex justify-between lg:gap-16">
                 {/* Left column: copy */}
                 <div className="lg:w-1/2 lg:text-[16px] leading-[1.6] tracking-[0.04em] text-[#36454F]">
                     <p className="uppercase text-[15px] font-semibold tracking-[0.2em] text-[#000080] mb-6">

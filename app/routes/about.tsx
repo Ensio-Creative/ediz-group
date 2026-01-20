@@ -36,7 +36,7 @@ export default function About() {
                     <div>
                         <p className="text-[15px] tracking-wider text-[#000080] font-medium">ABOUT EDIZ GROUP</p>
                     </div>
-                    <div className="col-span-2">
+                    <div className="col-span-2 lg:mt-0 mt-6">
                         <h2 className="lg:text-[60px] text-3xl leading-tight text-[#36454F] lg:max-w-3xl">
                             Building the future across multiple industries
                         </h2>
@@ -103,9 +103,9 @@ export default function About() {
                             Our Vision
                         </div>
                         <div className="absolute right-4 sm:right-6 lg:right-0 bottom-4 sm:bottom-8 lg:bottom-10 bg-white backdrop-blur p-4 sm:p-5 lg:p-8 w-full max-w-xs sm:max-w-sm lg:w-[540px] z-10">
-                            <p className="lg:hidden text-3xl text-[#000080]"> Our Vision</p>
+                            <p className="lg:hidden text-3xl text-[#000080] my-4"> Our Vision</p>
 
-                            <p className="text-[#36454F] text-[14px] sm:text-[16px] lg:text-[20px] leading-relaxed">
+                            <p className="text-[#36454F] text-[14px] sm:text-[16px] lg:text-[20px] leading-relaxed lg:pb-0 pb-4">
                                 To shape Nigeria’s future as the conglomerate that bridges industrial progress with
                                 enhanced human prosperity, setting the standard for integrated excellence across every
                                 sector we serve.
@@ -131,8 +131,8 @@ export default function About() {
                             Our Mission
                         </div>
                         <div className="absolute right-4 sm:right-6 lg:right-0 bottom-4 sm:bottom-8 lg:bottom-10 bg-white backdrop-blur p-4 sm:p-5 lg:p-8 w-full max-w-xs sm:max-w-sm lg:w-[540px] z-10">
-                            <p className="lg:hidden text-3xl text-[#000080]"> Our Mission</p>
-                            <p className="text-[#36454F] text-[14px] sm:text-[16px] lg:text-[20px] leading-relaxed">
+                            <p className="lg:hidden text-3xl text-[#000080] my-4"> Our Mission</p>
+                            <p className="text-[#36454F] text-[14px] sm:text-[16px] lg:text-[20px] leading-relaxed lgLpb-0 pb-4">
                                 To consistently deliver integrated solutions across engineering, hospitality, and
                                 entertainment — driving progress through excellence, innovation, and strategic partnerships.
                             </p>
@@ -147,7 +147,7 @@ export default function About() {
                 <Section className="py-32">
                     <div className="lg:grid grid-cols-3">
                         <div>
-                            <p className="text-[15px] tracking-wider font-medium">OUR VALUES</p>
+                            <p className="text-[15px] tracking-wider font-medium lg:mb-0 mb-6">OUR VALUES</p>
                         </div>
                         <div className="col-span-2">
                             <div className="text-2xl sm:text-3xl lg:text-[60px] space-y-1">

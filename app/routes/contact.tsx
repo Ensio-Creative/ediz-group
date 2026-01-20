@@ -67,7 +67,7 @@ export default function Contact() {
             </div>
 
             {/* Intro */}
-            <Section className="py-32">
+            <Section className="lg:py-32 py-16">
                 {/* <p className="text-[15px] tracking-wider text-[#000080] text-center font-semibold">CONTACT US</p> */}
                 <h2 className="mt-4 text-[#36454F] text-xl sm:text-[60px] leading-tight max-w-4xl text-center mx-auto">
                     Get in touch with us for any enquiries or questions because we can’t wait to hear from you.

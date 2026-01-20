@@ -11,7 +11,7 @@ const mobileLinkBase =
 const HeaderNav = () => {
     const [scrolled, setScrolled] = React.useState(false);
     const [mobileOpen, setMobileOpen] = React.useState(false);
-    const [mobileBusinessesOpen, setMobileBusinessesOpen] = React.useState(true);
+    const [mobileBusinessesOpen, setMobileBusinessesOpen] = React.useState(false);
     const [desktopBusinessesOpen, setDesktopBusinessesOpen] = React.useState(false);
 
     React.useEffect(() => {
