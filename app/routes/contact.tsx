@@ -87,7 +87,7 @@ export default function Contact() {
                             </div>
                             <div>
                                 <p className="text-[15px] tracking-wider text-[#000080] font-semibold">CALL US</p>
-                                <p className="mt-2 lg:text-[26px]">+234 806 730 0000<br />+234 703 157 8053</p>
+                                <p className="mt-2 lg:text-[26px]">+234 806 730 0000<br /> </p>
                             </div>
                             <div>
                                 <p className="text-[15px] tracking-wider text-[#000080] font-semibold">EMAIL US</p>
